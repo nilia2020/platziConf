@@ -9,5 +9,11 @@ import Badge from './components/Badge'
 const container = document.getElementById('app')
 // ReactDOM.render(__elemnento__, __dónde__)
 // agrego < y /> a la clase Badge para que lo tome como un elemento
-ReactDOM.render(<Badge/>, container)
+ReactDOM.render(<Badge 
+    firstName='Jorge'
+    lastName= 'Niglia'
+    avatarUrl='https://s.gravatar.com/avatar/ea8a45bd8475f4af372239e4a0a28d96?s=80'
+    jobTitle = 'Material Engineer'
+    twitter = 'JorgeNiglia'
+   />, container)
 

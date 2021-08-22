@@ -7,6 +7,14 @@ import "./styles/Badge.css"
 class Badge extends React.Component {
   //Todos los componentes requieren el método render
   render() {
+    
+    const {
+        firstName,
+        lastName,
+        avatarUrl,
+        jobTitle,
+        twitter
+    } = this.props
     return (
       <article className="Badge">
         <section className="Badge__header">
@@ -15,16 +23,16 @@ class Badge extends React.Component {
         <section className="Badge__section-name">
           <img
             className="Badge__avatar"
-            src={`https://s.gravatar.com/avatar/ea8a45bd8475f4af372239e4a0a28d96?s=80`}
+            src={avatarUrl}
             alt="Avatar"
           />
           <h1>
-            Jorge <br /> Niglia
+            {firstName} <br /> {lastName}
           </h1>
         </section>
         <section className="Badge__section-info">
-          <h3>Material Enginner</h3>
-          <div>@JorgeNiglia</div>
+          <h3>{jobTitle}</h3>
+          <div>@{twitter}</div>
         </section>
         <section className="Badge__footer">#platziConf</section>
       </article>
