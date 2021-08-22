@@ -7,7 +7,7 @@ import "./styles/Badge.css"
 class Badge extends React.Component {
   //Todos los componentes requieren el método render
   render() {
-    
+
     const {
         firstName,
         lastName,
